@@ -171,7 +171,7 @@ function isQuietTime(date = new Date()) {
   function getWakeAfterMinutes(date = new Date()) {
    if (isQuietTime(date)) return 999999;
     return isDayTime(date)
-return isDayTime(date) ? readNumberEnv("NIGHT_WAKE_AFTER_MINUTES", 120, { min: 1 });}
+return isDayTime(date) ? readNumberEnv("NIGHT_WAKE_AFTER_MINUTES", 120, { min: 1 })
     
 function getCheckIntervalMinutes(date = new Date()) {
   if (isQuietTime(date)) return 999999
